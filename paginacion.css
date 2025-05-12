@@ -1,0 +1,33 @@
+ #hotel-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#pagination button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#pagination button[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
